@@ -37,6 +37,7 @@ body {
   gap: 40px;
   width: 100%;
   color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .options {
@@ -76,8 +77,10 @@ body {
   background-color: black;
 }
 
-.clear-button {
+.clear-button,
+.size-button {
   padding: 15px 10px;
   background-color: white;
   border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

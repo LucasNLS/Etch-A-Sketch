@@ -16,6 +16,11 @@ function createGrid(amount) {
     gridcontainer.appendChild(div);
     j++;
   }
+
+  const squares = document.getElementsByClassName("grid");
+  for (let x = 0; x < squares.length; x++) {
+    squares[x].addEventListener("mouseover", changeBackground);
+  }
 }
 
 function changeBackground(e) {
@@ -30,12 +35,28 @@ function clearBackground() {
   }
 }
 
-createGrid(20);
-
-const squares = document.getElementsByClassName("grid");
-for (let x = 0; x < squares.length; x++) {
-  squares[x].addEventListener("mouseover", changeBackground);
+function changeSize() {
+  let size = prompt("Input the size of the grid from 1 to 100");
+  if (size > 100) {
+    size = 100;
+  }
+  const rows = document.querySelectorAll(".row");
+  //const grid = document.getElementsByClassName("grid");
+  rows.forEach((row) => {
+    row.remove();
+  });
+  createGrid(size);
 }
+
+createGrid(16);
+
+//const squares = document.getElementsByClassName("grid");
+//for (let x = 0; x < squares.length; x++) {
+//squares[x].addEventListener("mouseover", changeBackground);
+//}
 
 const clearButton = document.querySelector(".clear-button");
 clearButton.addEventListener("click", clearBackground);
+
+const sizeButton = document.querySelector(".size-button");
+sizeButton.addEventListener("click", changeSize);
