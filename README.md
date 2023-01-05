@@ -1,2 +1,1 @@
-# Etch-A-Sketch
-Etch-A-Sketch project
+Etch-A-Sketch made with HTML, CSS, and JavaScript.
