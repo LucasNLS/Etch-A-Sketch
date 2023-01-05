@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100%;
   margin: 0;
-  background-color: #1696be;
+  background-color: #0a2647;
 }
 
 .header {
@@ -14,18 +14,38 @@ body {
   justify-content: center;
   padding: 30px;
   width: 100%;
+  font-style: italic;
+  font-size: 30px;
 }
 
 .body {
-  padding: 400px 200px;
+  padding: 300px 50px;
   display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .footer {
   padding: 30px;
   background-color: grey;
   display: flex;
-  width: 100%;
   justify-content: center;
   gap: 40px;
+  width: 100%;
+  color: black;
+}
+
+.options {
+  padding: 50px 10px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.grid-container {
+  background-color: white;
+  height: 400px;
+  width: 400px;
 }
